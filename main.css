@@ -1,0 +1,30 @@
+.main_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(117, 167, 84);
+}
+.main_header h1,
+.main_header p,
+.main_header button {
+  color: rgb(34, 34, 77);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.main_header h1:hover,
+.main_header p:hover,
+.main_header button:hover {
+  background: rgb(117, 167, 84);
+}
+.main_header h1::after,
+.main_header p::after,
+.main_header button::after {
+  background: rgb(117, 167, 84);
+}
+.main_header h1 button:hover,
+.main_header p button:hover,
+.main_header button button:hover {
+  content: "chanel";
+}/*# sourceMappingURL=main.css.map */

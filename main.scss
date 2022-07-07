@@ -1,0 +1,41 @@
+//operator
+//    variables
+//mixing
+// nesting
+//parameter
+//partials import/export wala
+
+// font-size: 1rem + 1rem; //add
+// height: (100vh/2); //dived
+
+@import  "mixin" ;
+@import  "var" ;
+
+
+.main_header {
+  @include flexprops;
+  background: $bg-color;
+
+  h1,
+  p,
+  button {
+    //poarent
+    @include colorfont(2px, uppercase);
+    // text-transform: capitalize;
+    &:hover {
+      //child
+      background: $bg-color;
+    }
+
+    &::after {
+      //child
+      background: $bg-color;
+    }
+
+    button:hover {
+      //child
+
+      content: "chanel";
+    }
+  }
+}
